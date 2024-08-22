@@ -1,0 +1,9 @@
+<div class="search-container">
+  <app-search (searchChanged)="filterCards($event)"></app-search>
+</div>
+
+<div class="row">
+  <div class="column" *ngFor="let card of filteredCards; let i = index" [attr.data-index]="i">
+    <app-card [card]="card" (deleteCardEvent)="deleteCard($event)"></app-card>
+  </div>
+</div>

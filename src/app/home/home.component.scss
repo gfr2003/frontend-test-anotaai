@@ -1,0 +1,21 @@
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.column {
+  float: left;
+  width: 18%;
+  padding: 0 10px;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}

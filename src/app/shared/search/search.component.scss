@@ -1,0 +1,33 @@
+.input-container {
+  position: relative;
+  display: inline-block;
+  display: flex;
+}
+
+.input-custom {
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 40vw;
+  &:focus {
+    border-color: #007bff;
+  }
+}
+
+.search-button {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  padding-left: 0.5rem;
+  transform: translateY(-50%);
+  background: transparent;
+  height: 100%;
+  border: none;
+  border-left: 1px solid #ccc;
+  cursor: pointer;
+  color: #ccc;
+  z-index: 1;
+  align-items: center;
+}

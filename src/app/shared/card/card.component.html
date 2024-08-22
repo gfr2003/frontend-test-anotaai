@@ -1,0 +1,12 @@
+<div class="card">
+  <button class="close-btn" (click)="onDelete()">
+    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+      <title>Close</title>
+      <path fill="gray" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368" />
+    </svg>
+  </button>
+  <img [src]="card.img" [alt]="card.title" class="imagem" />
+  <span [ngClass]="{ paisagem: card.type === 1, flor: card.type === 2, pizza: card.type === 3 }" class="type"></span>
+  <h2>{{ card.title }}</h2>
+  <p class="short-text">{{ card.description }}</p>
+</div>
