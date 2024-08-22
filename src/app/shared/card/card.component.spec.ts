@@ -40,7 +40,7 @@ describe('CardComponent', () => {
   });
 
   it('should call onDelete when close button is clicked', () => {
-    // Substitui o método onDelete com uma função mock
+
     const onDeleteMock = jest.fn();
     component.onDelete = onDeleteMock;
 
@@ -51,7 +51,7 @@ describe('CardComponent', () => {
   });
 
   it('should emit deleteCardEvent when close button is clicked', () => {
-    // Substitui o método emit do EventEmitter com uma função mock
+
     const emitSpy = jest.spyOn(component.deleteCardEvent, 'emit');
 
     const button: HTMLElement = fixture.nativeElement.querySelector('.close-btn')!;

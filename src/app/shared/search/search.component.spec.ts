@@ -18,16 +18,16 @@ describe('SearchComponent', () => {
   });
 
   it('should emit searchChanged event when search field value changes', () => {
-    // Espionar o método emit do EventEmitter
+
     const emitSpy = jest.spyOn(component.searchChanged, 'emit');
 
     const inputElement = fixture.debugElement.query(By.css('input')).nativeElement as HTMLInputElement;
     inputElement.value = 'Test';
-    inputElement.dispatchEvent(new Event('input')); // Disparar evento de entrada
+    inputElement.dispatchEvent(new Event('input'));
 
-    fixture.detectChanges(); // Detectar mudanças para atualizar a view
+    fixture.detectChanges();
 
-    // Verificar se o método emit foi chamado
+
     expect(emitSpy).toHaveBeenCalledWith('Test');
   });
 });

@@ -5,9 +5,7 @@ import { HomeComponent } from './home.component';
 import { CardService } from '../services/cards.service';
 import { CardComponent } from '../shared/card/card.component';
 import { SearchComponent } from '../shared/search/search.component';
-import { ICard } from '../models/card.model';
 
-// Mock do CardService
 class MockCardService {
   getCards() {
     return of([
